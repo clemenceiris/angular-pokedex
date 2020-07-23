@@ -1,7 +1,9 @@
-<label>
-    Search:
-    <input type="text" [formControl]="name" />
-</label>
+<form class="pokemon-form">  
+    <mat-form-field class="example-full-width">
+      <mat-label>Rechercher un pokemon</mat-label>
+      <textarea matInput placeholder="Ex. Pikachu" [formControl]="name"></textarea>
+    </mat-form-field>
+  </form>
 
 <div class="wrapper">
 

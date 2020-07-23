@@ -1,0 +1,12 @@
+.mat-toolbar{
+    background-color: #d1c4e9;
+}
+
+.pokemon-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+  
