@@ -17,13 +17,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule} from '@angular/material/card';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokedexListComponent
+    PokedexListComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,

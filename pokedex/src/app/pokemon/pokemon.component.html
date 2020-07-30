@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="card" fxLayout="row" fxLayoutAlign="space-around center">
+	  <div class="card__side card__side--front-2">
+		<div class="card__title card__title--2">
+		  <h4 class="card__heading">{{pokemon?.name | uppercase}}</h4>
+		  <h5 class="card__heading">#{{ pokemon?.id }}</h5>
+		</div>
+
+		<div class="card__details" fxLayout="row" fxLayoutAlign="space-around center">
+			<span><img src="{{pokemon?.sprites.front_default}}"></span>
+		</div>
+	  </div>
+	  <div class="card__side card__side--back card__side--back-2">
+		<div class="card__cta">
+		  <div class="card__price-box">
+			<p><strong>Types: </strong><span *ngFor="let poketype of pokemon?.types">{{poketype.type.name | titlecase}} </span><p>
+			<p><strong>Taille: </strong>{{pokemon?.height/10}}m
+				<strong>Poids: </strong>{{pokemon?.weight/10}}kg</p>
+			<tr *ngFor="let pokestat of pokemon?.stats">
+				<td>{{pokestat.stat.name | titlecase}}</td>
+				<td>{{pokestat.base_stat}}</td>
+			  </tr>
+		  </div>
+		  <a href="#popup" class="btn btn--white">Select</a>
+		</div>
+	  </div>
+	</div>
+  </div>
