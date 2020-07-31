@@ -13,9 +13,7 @@
         </mat-card-header>
         <img mat-card-image src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/{{extractId(pokemon.url)}}.png">
         <mat-card-content>
-          <p>
-            #{{extractId(pokemon.url)}}
-          </p>
+            <p class="numbers"><span class="material-icons">star_rate</span>{{extractId(pokemon.url)}}</p>
         </mat-card-content>
         <mat-card-actions>
           <a mat-raised-button color="primary" routerLink="/pokemon/{{extractId(pokemon.url)}}">Voir la fiche</a>

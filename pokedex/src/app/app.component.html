@@ -2,9 +2,11 @@
     <mat-toolbar color="primary">
       <mat-toolbar-row>
         <span>Pokedex</span>
-        <span class="menu-spacer"></span>
+        <div fxLayout="row" fxFlex="20">
           <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-          <a mat-button [routerLink]="'/pokedex-list'"> Liste </a>
+          <a mat-button [routerLink]="'/pokedex-list'">
+            <span class="material-icons">home</span> Liste </a>
+        </div>
       </mat-toolbar-row>
     </mat-toolbar>
     

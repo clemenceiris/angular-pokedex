@@ -46,3 +46,8 @@
 .content > mat-card {
     width: 150px;
 }
+
+.numbers{
+    font-size: 1.8rem;
+}
+
