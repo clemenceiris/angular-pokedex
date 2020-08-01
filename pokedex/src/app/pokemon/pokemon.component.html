@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="card" fxLayout="column" fxLayoutAlign="space-around center" fxFlexOffset="37.5" fxFlex="25">
+	<div class="card" fxLayout="row" fxFlex="25%" fxFlexOffset="37.5%" fxFlexOffset.xs="10%" fxFlex.xs="80%" fxFlex.sm="33%">
 	  <div class="card__side card__side--front-2">
 		<div class="card__title card__title--2">
 		  <h4 class="card__heading">{{pokemon?.name | uppercase}}</h4>
@@ -7,7 +7,7 @@
 			  <span class="material-icons">star_rate</span>{{ pokemon?.id }}</h5>
 		</div>
 
-		<div class="card__details" fxLayout="row" fxLayoutAlign="space-around center">
+		<div class="card__details" fxLayout="rowrap" fxLayoutAlign="space-around center">
 			<img src="{{pokemon?.sprites.front_default}}">
 		</div>
 	  </div>
